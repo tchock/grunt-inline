@@ -59,7 +59,7 @@ module.exports = function(grunt) {
 	}
 
 	function isBase64Path( url ){
-		return url.match(/^'?data.*base64/);
+		return url.match(/^'?data.*(base64|image\/svg)/);
 	}
 
 	// code from grunt-contrib-copy, with a little modification
